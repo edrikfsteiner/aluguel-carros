@@ -1,4 +1,4 @@
-'## Projeto Sistema de Atividades Especiais - GRUPO A
+'## Projeto Sistema de aluguel de carros - GRUPO A
 
 ### Integrantes
 Arturo Burigo - [arturoburigo](https://github.com/arturoburigo)<br>
@@ -32,10 +32,9 @@ Abaixo, segue os scripts SQL separados por tipo:
 + Functions [functions.sql](scripts_sql/functions.sql)
 
 ### Código Fonte do CRUD
-- Linguagem de Programação C# .NET.<br>
-- Framework .NET 4.6
-- Projeto Windows Forms
-- Biblioteca Entity Framework para SQL Server (nativo)
+- Linguagem de Programação Java<br>
+- Framework SpringBoot
+- JavaSPA e MYSQL driver
 
 [Codigo Fonte](fonte/)
 
