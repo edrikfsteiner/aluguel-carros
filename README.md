@@ -1,4 +1,4 @@
-## Projeto Sistema de Atividades Especiais - GRUPO A
+'## Projeto Sistema de Atividades Especiais - GRUPO A
 
 ### Integrantes
 Arturo Burigo - [arturoburigo](https://github.com/arturoburigo)<br>
@@ -11,10 +11,10 @@ Vitor - [VitorKW](https://github.com/VitorKW)<br>
 
 ### Modelo Físico
 Utilizamos a ferramenta de modelagem de dados [dbdiagram.io](https://dbdiagram.io/) para criação do modelo físico do banco de dados, para posterior exportação dos scripts DDL das tabelas e relacionamentos.<br>
-Arquivo fonte: [Modelo Fisico]
-(https://dbdiagram.io/d/trabalho-banco-6668ca856bc9d447b1724f8d).<br>
+Arquivo fonte: [Modelo Fisico](https://dbdiagram.io/d/trabalho-banco-6668ca856bc9d447b1724f8d).<br>
 
-![image](https://github.com/jlsilva01/projeto_final_bd2_satc_2023/assets/484662/1fefa9fd-868c-4209-8cc5-d32cd73fa46d)
+
+![image](Modelo_Fisico/Modelo_Fisico.png)
   
 ### Dicionário de Dados
 As informações sobre as tabelas e índices foram documentados na planilha [template1.xlsx](dicionario_dados/template1.xlsx).
