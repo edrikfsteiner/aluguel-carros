@@ -1,6 +1,6 @@
-package grupoA.api.dtos;
+    package grupoA.api.dtos;
 
-import java.util.Date;
+    import java.util.Date;
 
-public record VeiculoDTO(String placa, Date ano, int id_cor, int id_modelo) {
-}
+    public record VeiculoDTO(String placa, Date ano, int id_cor, int id_modelo) {
+    }
