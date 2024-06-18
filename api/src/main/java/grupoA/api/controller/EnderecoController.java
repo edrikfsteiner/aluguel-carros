@@ -38,7 +38,7 @@ public class EnderecoController {
     @PutMapping("/{id}")
     public ResponseEntity<EnderecoDTO> updateEndereco(@PathVariable("id") int id, @RequestBody EnderecoDTO enderecoDTO) {
         Endereco endereco = convertToEntity(enderecoDTO);
-        endereco.setId_endereco(id); // garantindo que o ID do endereco a ser atualizado seja o mesmo do path variable
+        endereco.setId_endereco( id); // garantindo que o ID do endereco a ser atualizado seja o mesmo do path variable
         endereco = enderecoService.update(endereco);
         enderecoDTO = convertToEnderecoDTO(endereco);
         return ResponseEntity.ok(enderecoDTO);
