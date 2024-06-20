@@ -1,116 +1,107 @@
--- Insert statements for marca
-INSERT INTO marca (id_marca, marca) VALUES
-(1, 'Ford'),
-(2, 'Chevrolet'),
-(3, 'Toyota'),
-(4, 'Honda'),
-(5, 'BMW'),
-(6, 'Audi'),
-(7, 'Mercedes'),
-(8, 'Volkswagen'),
-(9, 'Hyundai'),
-(10, 'Nissan');
+-- Insert statements for table marca
+INSERT INTO marca (marca) VALUES ('Ford');
+INSERT INTO marca (marca) VALUES ('Toyota');
+INSERT INTO marca (marca) VALUES ('Honda');
+INSERT INTO marca (marca) VALUES ('Chevrolet');
+INSERT INTO marca (marca) VALUES ('Nissan');
+INSERT INTO marca (marca) VALUES ('Volkswagen');
+INSERT INTO marca (marca) VALUES ('Hyundai');
+INSERT INTO marca (marca) VALUES ('Kia');
+INSERT INTO marca (marca) VALUES ('BMW');
+INSERT INTO marca (marca) VALUES ('Mercedes-Benz');
 
--- Insert statements for modelo
-INSERT INTO modelo (id_modelo, modelo, id_marca) VALUES
-(1, 'Fiesta', 1),
-(2, 'Cruze', 2),
-(3, 'Corolla', 3),
-(4, 'Civic', 4),
-(5, '3 Series', 5),
-(6, 'A4', 6),
-(7, 'C-Class', 7),
-(8, 'Golf', 8),
-(9, 'Elantra', 9),
-(10, 'Altima', 10);
+-- Insert statements for table modelo
+INSERT INTO modelo (modelo, id_marca) VALUES ('Fiesta', 1);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Corolla', 2);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Civic', 3);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Cruze', 4);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Sentra', 5);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Golf', 6);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Elantra', 7);
+INSERT INTO modelo (modelo, id_marca) VALUES ('Optima', 8);
+INSERT INTO modelo (modelo, id_marca) VALUES ('3 Series', 9);
+INSERT INTO modelo (modelo, id_marca) VALUES ('C-Class', 10);
 
--- Insert statements for cor
-INSERT INTO cor (id_cor, cor) VALUES
-(1, 'Red'),
-(2, 'Blue'),
-(3, 'Black'),
-(4, 'White'),
-(5, 'Silver'),
-(6, 'Green'),
-(7, 'Yellow'),
-(8, 'Gray'),
-(9, 'Brown'),
-(10, 'Orange');
+-- Insert statements for table cor
+INSERT INTO cor (cor) VALUES ('Vermelho');
+INSERT INTO cor (cor) VALUES ('Azul');
+INSERT INTO cor (cor) VALUES ('Preto');
+INSERT INTO cor (cor) VALUES ('Branco');
+INSERT INTO cor (cor) VALUES ('Prata');
+INSERT INTO cor (cor) VALUES ('Cinza');
+INSERT INTO cor (cor) VALUES ('Verde');
+INSERT INTO cor (cor) VALUES ('Amarelo');
+INSERT INTO cor (cor) VALUES ('Marrom');
+INSERT INTO cor (cor) VALUES ('Roxo');
 
--- Insert statements for cliente
-INSERT INTO cliente (cd_cliente, nm_cliente, telefone, email, cpf) VALUES
-(1, 'John Doe', 1234567890, 'john@example.com', 11122233344),
-(2, 'Jane Smith', 1234567891, 'jane@example.com', 11122233345),
-(3, 'Robert Johnson', 1234567892, 'robert@example.com', 11122233346),
-(4, 'Michael Brown', 1234567893, 'michael@example.com', 11122233347),
-(5, 'William Jones', 1234567894, 'william@example.com', 11122233348),
-(6, 'David Miller', 1234567895, 'david@example.com', 11122233349),
-(7, 'Richard Davis', 1234567896, 'richard@example.com', 11122233350),
-(8, 'Joseph Wilson', 1234567897, 'joseph@example.com', 11122233351),
-(9, 'Charles Moore', 1234567898, 'charles@example.com', 11122233352),
-(10, 'Thomas Taylor', 1234567899, 'thomas@example.com', 11122233353);
+-- Insert statements for table endereco
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88800-000', 'Criciuma', 'Centro', 'Rua A', 1);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88701-000', 'Tubarao', 'Vila Moema', 'Rua B', 2);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88790-000', 'Laguna', 'Centro', 'Rua C', 3);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88820-000', 'Icara', 'Presidente Vargas', 'Rua D', 4);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88900-000', 'Ararangua', 'Cidade Alta', 'Rua E', 5);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88801-000', 'Criciuma', 'Comerciario', 'Rua F', 6);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88702-000', 'Tubarao', 'Oficinas', 'Rua G', 7);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88791-000', 'Laguna', 'Progresso', 'Rua H', 8);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88821-000', 'Icara', 'Centro', 'Rua I', 9);
+INSERT INTO endereco (uf, cep, cidade, bairro, rua, numero) VALUES ('SC', '88901-000', 'Ararangua', 'Centro', 'Rua J', 10);
 
--- Insert statements for endereco
-INSERT INTO endereco (cd_cliente, uf, cep, cidade, bairro, rua, numero) VALUES
-(1, 'SC', '88801000', 'Criciúma', 'Centro', 'Rua A', 100),
-(2, 'SC', '88704000', 'Tubarão', 'Centro', 'Rua B', 200),
-(3, 'SC', '88820000', 'Içara', 'Centro', 'Rua C', 300),
-(4, 'SC', '88790000', 'Laguna', 'Centro', 'Rua D', 400),
-(5, 'SC', '88900000', 'Araranguá', 'Centro', 'Rua E', 500),
-(6, 'SC', '88801001', 'Criciúma', 'Centro', 'Rua F', 600),
-(7, 'SC', '88704001', 'Tubarão', 'Centro', 'Rua G', 700),
-(8, 'SC', '88820001', 'Içara', 'Centro', 'Rua H', 800),
-(9, 'SC', '88790001', 'Laguna', 'Centro', 'Rua I', 900),
-(10, 'SC', '88900001', 'Araranguá', 'Centro', 'Rua J', 1000);
+-- Insert statements for table cliente
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Joao Silva', 11987654321, 'joao.silva@example.com', 12345678901, 1);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Maria Santos', 21987654321, 'maria.santos@example.com', 12345678902, 2);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Pedro Costa', 31987654321, 'pedro.costa@example.com', 12345678903, 3);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Ana Lima', 41987654321, 'ana.lima@example.com', 12345678904, 4);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Carlos Souza', 51987654321, 'carlos.souza@example.com', 12345678905, 5);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Fernanda Pereira', 61987654321, 'fernanda.pereira@example.com', 12345678906, 6);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Lucas Oliveira', 71987654321, 'lucas.oliveira@example.com', 12345678907, 7);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Juliana Almeida', 81987654321, 'juliana.almeida@example.com', 12345678908, 8);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Rafael Fernandes', 91987654321, 'rafael.fernandes@example.com', 12345678909, 9);
+INSERT INTO cliente (nm_cliente, telefone, email, cpf, id_endereco) VALUES ('Patricia Gomes', 101987654321, 'patricia.gomes@example.com', 12345678910, 10);
 
--- Insert statements for veiculos
-INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES
-('ABC1234', '2020-01-01', 1, 1),
-('DEF5678', '2019-02-01', 2, 2),
-('GHI9101', '2018-03-01', 3, 3),
-('JKL1121', '2021-04-01', 4, 4),
-('MNO3141', '2017-05-01', 5, 5),
-('PQR5161', '2016-06-01', 6, 6),
-('STU7181', '2020-07-01', 7, 7),
-('VWX9202', '2019-08-01', 8, 8),
-('YZA1223', '2018-09-01', 9, 9),
-('BCD3245', '2021-10-01', 10, 10);
+-- Insert statements for table veiculos
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('ABC1234', '2015-01-01', 1, 1);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('DEF5678', '2016-01-01', 2, 2);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('GHI9012', '2017-01-01', 3, 3);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('JKL3456', '2018-01-01', 4, 4);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('MNO7890', '2019-01-01', 5, 5);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('PQR2345', '2020-01-01', 6, 6);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('STU6789', '2021-01-01', 7, 7);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('VWX1234', '2022-01-01', 8, 8);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('YZA5678', '2023-01-01', 9, 9);
+INSERT INTO veiculos (placa, ano, id_cor, id_modelo) VALUES ('BCD9012', '2024-01-01', 10, 10);
 
--- Insert statements for aluguel
-INSERT INTO aluguel (id_aluguel, cd_cliente, placa, data_inicio, data_fim, valor) VALUES
-(1, 1, 'ABC1234', '2023-01-01 10:00:00', '2023-01-05 10:00:00', 200.00),
-(2, 2, 'DEF5678', '2023-02-01 11:00:00', '2023-02-06 11:00:00', 250.00),
-(3, 3, 'GHI9101', '2023-03-01 12:00:00', '2023-03-05 12:00:00', 220.00),
-(4, 4, 'JKL1121', '2023-04-01 13:00:00', '2023-04-07 13:00:00', 300.00),
-(5, 5, 'MNO3141', '2023-05-01 14:00:00', '2023-05-05 14:00:00', 180.00),
-(6, 6, 'PQR5161', '2023-06-01 15:00:00', '2023-06-06 15:00:00', 280.00),
-(7, 7, 'STU7181', '2023-07-01 16:00:00', '2023-07-05 16:00:00', 260.00),
-(8, 8, 'VWX9202', '2023-08-01 17:00:00', '2023-08-05 17:00:00', 240.00),
-(9, 9, 'YZA1223', '2023-09-01 18:00:00', '2023-09-06 18:00:00', 320.00),
-(10, 10, 'BCD3245', '2023-10-01 19:00:00', '2023-10-05 19:00:00', 210.00);
+-- Insert statements for table forma_pagamento
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Cartão de Crédito');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Cartão de Débito');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Dinheiro');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Pix');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('PayPal');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Apple Pay');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Google Pay');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Cheque');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Transf. Bancária');
+INSERT INTO forma_pagamento (tipo_pagamento) VALUES ('Voucher');
 
--- Insert statements para forma_pagamento
-INSERT INTO forma_pagamento (cd_forma_pagamento, tipo_pagamento) VALUES
-(1, 'Cartão de Crédito'),
-(2, 'Cartão de Débito'),
-(3, 'Dinheiro'),
-(4, 'Pix'),
-(5, 'Paypal'),
-(6, 'Apple Pay'),
-(7, 'Google Pay'),
-(8, 'Boleto'),
-(9, 'Cheque'),
-(10, 'Transf. Bancária');
+-- Insert statements for table pagamento
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (1, 150.50);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (2, 200.75);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (3, 100.00);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (4, 300.20);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (5, 250.00);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (6, 175.80);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (7, 225.90);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (8, 400.60);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (9, 320.40);
+INSERT INTO pagamento (cd_forma_pagamento, valor) VALUES (10, 500.00);
 
--- Insert statements for pagamento
-INSERT INTO pagamento (id_aluguel, cd_forma_pagamento, valor) VALUES
-(1, 1, 200.00),
-(2, 2, 250.00),
-(3, 3, 220.00),
-(4, 4, 300.00),
-(5, 5, 180.00),
-(6, 6, 280.00),
-(7, 7, 260.00),
-(8, 8, 240.00),
-(9, 9, 320.00),
-(10, 10, 210.00);
+-- Insert statements for table aluguel
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (1, 'ABC1234', 1, '2023-01-01 09:00:00', '2023-01-05 09:00:00', 150.50);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (2, 'DEF5678', 2, '2023-02-01 09:00:00', '2023-02-07 09:00:00', 200.75);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (3, 'GHI9012', 3, '2023-03-01 09:00:00', '2023-03-03 09:00:00', 100.00);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (4, 'JKL3456', 4, '2023-04-01 09:00:00', '2023-04-10 09:00:00', 300.20);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (5, 'MNO7890', 5, '2023-05-01 09:00:00', '2023-05-08 09:00:00', 250.00);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (6, 'PQR2345', 6, '2023-06-01 09:00:00', '2023-06-05 09:00:00', 175.80);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (7, 'STU6789', 7, '2023-07-01 09:00:00', '2023-07-10 09:00:00', 225.90);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (8, 'VWX1234', 8, '2023-08-01 09:00:00', '2023-08-12 09:00:00', 400.60);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (9, 'YZA5678', 9, '2023-09-01 09:00:00', '2023-09-05 09:00:00', 320.40);
+INSERT INTO aluguel (cd_cliente, placa, id_pagamento, data_inicio, data_fim, valor) VALUES (10, 'BCD9012', 10, '2023-10-01 09:00:00', '2023-10-15 09:00:00', 500.00);
