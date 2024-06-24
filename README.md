@@ -1,4 +1,4 @@
-'## Projeto Sistema de aluguel de carros - GRUPO A
+## Projeto Sistema de aluguel de carros - GRUPO A
 
 ### Integrantes
 Arturo Burigo - [arturoburigo](https://github.com/arturoburigo)<br>
