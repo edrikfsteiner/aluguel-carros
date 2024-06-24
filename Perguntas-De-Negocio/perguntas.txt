@@ -1,0 +1,10 @@
+1 - Listar todos os clientes que alugaram veículos de uma determinada cor em um período específico 
+    Respondido com Function
+
+2 - Quais são os modelos de veículos mais alugados em cada estado e qual é o valor total gerado por esses modelos em cada estado, depois gere um ranking dos modelos mais alugados e seus respectivos estados.
+
+
+3 - Quantos aluguéis foram feitos em 2023 para um modelo específico de carro, em Santa Catarina (SC), e pagos somente via cheque.
+
+4 - Listar todos os clientes que alugaram veículos de uma determinada marca e que também fizeram pagamentos usando crédito, incluindo a última data de aluguel de cada cliente.
+    Respondido com Procedure
