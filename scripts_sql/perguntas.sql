@@ -1,4 +1,3 @@
---Pergunta 2:
 -- Subconsulta para obter a contagem de aluguéis e valor total gerado por modelo e estado
 WITH alugueis_por_modelo_estado AS (
     SELECT 
@@ -40,6 +39,21 @@ ORDER BY
     uf;
 
 -- Ranking dos modelos mais alugados e seus respectivos estados
+WITH alugueis_por_modelo_estado AS (
+    SELECT 
+        m.modelo,
+        e.uf,
+        COUNT(a.id_aluguel) AS total_alugueis,
+        SUM(a.valor) AS valor_total
+    FROM 
+        aluguel a
+        JOIN veiculos v ON a.placa = v.placa
+        JOIN modelo m ON v.id_modelo = m.id_modelo
+        JOIN cliente c ON a.cd_cliente = c.cd_cliente
+        JOIN endereco e ON c.id_endereco = e.id_endereco
+    GROUP BY 
+        m.modelo, e.uf
+)
 SELECT 
     modelo,
     uf,
@@ -50,6 +64,8 @@ FROM
     alugueis_por_modelo_estado
 ORDER BY 
     ranking;
+
+
 
 
 --Pergunta 3:
