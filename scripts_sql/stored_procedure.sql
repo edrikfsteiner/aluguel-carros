@@ -30,5 +30,5 @@ BEGIN
         c.cd_cliente, c.nm_cliente, c.telefone, c.email, c.cpf;
 END;
 
-EXEC ListarClientesPorMarcaEFormaPagamento @p_marca_nome = 'Toyota', @p_tipo_pagamento = 'Cartão de Crédito';
+EXEC ListarClientesPorMarcaEFormaPagamento @p_marca_nome = 'Ford', @p_tipo_pagamento = 'Cartão de Crédito';
 --Valor da marca e do tipo de pagamento pode mudar.
